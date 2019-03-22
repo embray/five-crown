@@ -1,0 +1,122 @@
+@keyframes rainbow {
+    0% { color: red; background-color: green }
+   14% { color: orange; background-color: blue }
+   28% { color: yellow; background-color: indigo }
+   42% { color: green; background-color: violet }
+   56% { color: blue; background-color: red }
+   70% { color: indigo; background-color: orange }
+   84% { color: violet; background-color: yellow }
+  100% { color: red; background-color: green }
+}
+
+body {
+  /*animation: rainbow 10s infinite;*/
+}
+
+section {
+  text-align: center;
+}
+
+section > * {
+  text-align: left;
+}
+
+section > h2 {
+  text-align: center;
+}
+
+h1 { 
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 10vh;
+  margin-top: 10vh;
+}
+
+h2:first-letter {
+  font-size: xx-large;
+}
+
+#données dl {
+  margin-right: 10vh;
+}
+
+#données dt {
+  float: left;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+#données dt::after {
+  content: ": ";
+}
+
+#données dt {
+  float: left;
+}
+
+
+article {
+  border-top: 3px solid black;
+  padding: 1em;
+  text-align: center;
+}
+
+article > * {
+  margin: auto;
+}
+
+article h3 {
+  text-align: center;
+}
+
+#search, #search form {
+  text-align: center;
+}
+
+/* 
+Pour mettre l'image à la
+droit; essayez avec CSS
+comme ci-dessous
+*/
+figure#portrait {
+  float: right;
+  margin-top: 0;
+}
+
+figure#portrait img {
+  height: 30vh;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+a {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+nav {
+  text-align: center;
+  margin: auto;
+}
+nav ul li {
+  display: inline;
+  margin-right: 5vw;
+}
+
+table tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
